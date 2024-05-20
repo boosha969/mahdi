@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>تقدیم به دوست خوبم</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      @font-face {
+        font-family: digit;
+        src: url("digital-7_mono.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "iransans";
+        src: url("./fonts/IRANSansX-Bold.ttf") format("truetype");
+      }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
+  <body>
+    
+    <div id="mainDiv">
+      <div id="content">
+        <div id="code">
+          <span class="comments">سایه عزیزم</span>
+          <br />
+          <span class="comments"> همسفر خوشگل و مهربونم سلام </span>
+          <br />
+          <span class="comments">قربون قلب کوچولوت برم </span>
+          <br />
+          <span class="comments">امیدوارم که همیشه لبات خندون باشه </span>
+          <br />
+          <span class="comments">و همیشه لبات بچسبه به لبم </span>
+          <br />
+          <span class="comments">همیشه تو رو در اغوش بگیرم </span>
+          <br />
+          <span class="comments">و موهای خوشگلتو نوازش کنم </span>
+          <br />
+          <span class="comments">قبل از هر چیزی می خوام یه اعتراف کنم </span>
+          <br />
+          <span class="comments">
+            می دونستی وقتی می خندی دیگه غصه برام معنی نداره
+          </span>
+          <br />
+          <span class="comments"
+            >چون برام جاودانه ای و حتی اگه برای یک ثانیه منو یاد کنی برام کافیه
+          </span>
+          <br />
+          <span class="comments"
+            >یاد سهراب بخیر :آنکه تا لحظه خاموشی می گفت</span
+          >
+          <br />
+          <span class="comments">
+            (تو مرا یاد کنی یا نکنی من به یادت هستم )</span
+          >
+          <br />
+          <span class="comments"
+            >عشقم من و ببخش تو روز تولدت نیستم !</span
+          >
+          <br />
+          <span class="comments">اما همیشه کنارت هستم و تو بهترین هدیه دنیا هستی </span>
+          <br />
+          <span class="comments">عشقم تو هم به من قول بده همیشه کنارم می مونی</span>
+          <br />
+          <span class="comments">منم همیشه کنارت می مانم </span>
+          <br /> 
+          <span class="comments">مثل یک همسفر خوب </span>
+          <br />
+          <span class="comments">دوست دارم عشقم </span>
+          <br />
+          <span class="comments"
+            >در پایان چند سطر سکوت برات به یادگار می ذارم</span
+          >
+          <br />
+          <span class="comments"
+            >❤️تا در خلوت خودت هر طور که خواستی اون رو معنا کنی.❤️
+          </span>
+          <br />
+          <span class="comments"><a href="./happy/index.html">عزیزم برای خاموش کردن شمع این لینک کلیک کن</a></span>
+          <br />
+        </div>
+        <div id="loveHeart">
+          <canvas id="garden"></canvas>
+          <div id="words">
+            <div id="messages">
+              Our meeting time
+              <div id="elapseClock"></div>
+            </div>
+            <div id="loveu">
+              Don't be sad about anything
+              <br />The end of every story is sweet
+              <div class="signature">mahdiosati.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var offsetX = $("#loveHeart").width() / 2;
+      var offsetY = $("#loveHeart").height() / 2 - 55;
+      var together = new Date();
+      together.setFullYear(2024, 3, 28);
+      together.setHours(0);
+      together.setMinutes(0);
+      together.setSeconds(0);
+      together.setMilliseconds(0);
+      if (!document.createElement("canvas").getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML =
+          "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none");
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+      } else {
+        setTimeout(function () {
+          startHeartAnimation();
+        }, 5000);
+        timeElapse(together);
+        setInterval(function () {
+          timeElapse(together);
+        }, 500);
+        adjustCodePosition();
+        $("#code").typewriter();
+      }
+    </script>
+    <audio src="./Kiarash - Bezanim Esmesho Dad Bezanim.mp3" autoplay="true" />
+  </body>
+</html>
